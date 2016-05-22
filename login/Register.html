@@ -40,27 +40,47 @@
           </ul>
         </div>
       </nav>
-      <div class="chicken">
-        <h3>How many Hackathons have you been to?</h3>
-          <select multiple>
-            <option value="4+">4+</option>
-            <option value="3">3</option>
-            <option value="2">2</option>
-            <option value="1">1</option>
-            <option value="0">0</option>
-          </select>
 
-        <h3>What is your favorite programming language?</h3>
-          <form>
-            <input type="checkbox" id="q2answer1">Java<br>
-            <input type="checkbox" id="q2answer2">C++<br>
-            <input type="checkbox" id="q2answer3">Python<br>
-            <input type="checkbox" id="q2answer4">Objective C<br>
-            <input type="checkbox" id="q2answer5">JavaScript<br>
-            <input type="checkbox" id="q2answer6">Swift<br>
-            <input type="checkbox" id="q2answer7">HTML/CSS<br>
-            <input type="textbox" id="q2answer8">Other<br>
-          </form>
+      <div class="container">
+        <div class = "form-group">
+          <label>How many Hackathons have you been to?</label>
+          <select class = "form-control" id = "sel1">
+            <option>4+</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+            <option>0</option>
+          </select>
+        </div>
+
+        <div class = "form-group">
+          <label>What is your favorite programming language?</label>
+            <form>
+              <div class = "checkbox">
+                <input type="checkbox" id="q2answer1">Java</label>
+              </div>
+              <div class = "checkbox">
+                <input type="checkbox" id="q2answer2">C++</label>
+              </div>
+              <div class = "checkbox">
+                <input type="checkbox" id="q2answer3">Python</label>
+              </div>
+              <div class = "checkbox">
+                <input type="checkbox" id="q2answer4">Objective C</label>
+              </div>
+              <div class = "checkbox">
+                <input type="checkbox" id="q2answer5">JavaScript</label>
+              </div>
+              <div class = "checkbox">
+                <input type="checkbox" id="q2answer6">Swift</label>
+              </div>
+              <div class = "checkbox">
+                <input type="checkbox" id="q2answer7">HTML/CSS</label>
+              </div>
+              <label>Other</label>
+              <input type="text" class="form-control">
+            </form>
+        </div>
 
         <h3> What are you interested in doing at the Hackathon?</h3>
           <form>
