@@ -36,67 +36,129 @@
                 <li><a href="#">About Us</a></li>
               </ul>
             </li>
-            <li><a href="#">Log in</a></li>
+            <li><a href="login.html">Log in</a></li>
           </ul>
         </div>
       </nav>
-      <div class="chicken">
-        <h3>How many Hackathons have you been to?</h3>
-          <select multiple>
-            <option value="4+">4+</option>
-            <option value="3">3</option>
-            <option value="2">2</option>
-            <option value="1">1</option>
-            <option value="0">0</option>
-          </select>
 
-        <h3>What is your favorite programming language?</h3>
-          <form>
-            <input type="checkbox" id="q2answer1">Java<br>
-            <input type="checkbox" id="q2answer2">C++<br>
-            <input type="checkbox" id="q2answer3">Python<br>
-            <input type="checkbox" id="q2answer4">Objective C<br>
-            <input type="checkbox" id="q2answer5">JavaScript<br>
-            <input type="checkbox" id="q2answer6">Swift<br>
-            <input type="checkbox" id="q2answer7">HTML/CSS<br>
-            <input type="textbox" id="q2answer8">Other<br>
-          </form>
+      <div class="container">
+        <div class = "jumbotron">
+          <h1>Questionnare Page</h1>
+          <p>First-time users answering questions for the first time will go here. Returning users entering new answers may also nagivate to this page; their new results will be logged to their account.</p>
+        </div>
+        <form role = "form">
+          <div class = "form-group">
+            <label>How many Hackathons have you been to?</label>
+            <select class = "form-control" id = "sel1">
+              <option>4+</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
+              <option>0</option>
+            </select>
+          </div>
 
-        <h3> What are you interested in doing at the Hackathon?</h3>
-          <form>
-            <input type="checkbox" id="q3answer1">VR(Virtual Reality)<br>
-            <input type="checkbox" id="q3answer2">App Development<br>
-            <input type="checkbox" id="q3answer3">IOS<br>
-            <input type="checkbox" id="q3answer4">Game Development<br>
-            <input type="checkbox" id="q3answer5">Music Development<br>
-            <input type="checkbox" id="q3answer6">Android<br>
-            <input type="textbox" id="q2answer7">Other<br>
-          </form>
+          <div class = "form-group">
+            <label>What is your favorite programming language?</label>
+            <div class = "checkbox">
+              <input type="checkbox" id="q2answer1" value = "">Java</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q2answer2" value = "">C++</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q2answer3" value = "">Python</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q2answer4" value = "">Objective C</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q2answer5" value = "">JavaScript</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q2answer6" value = "">Swift</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q2answer7" value = "">HTML/CSS</label>
+            </div>
+            <p>Other</p>
+            <input type="text" class="form-control">
+          </div>
 
-        <h3>How many members do you prefer to be teamed up with?</h3>
-          <select multiple>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        <h3>What is your favorite type of food?</h3>
-          <form>
-            <input type="checkbox" id="q4answer1">Chinese<br>
-            <input type="checkbox" id="q4answer2">American<br>
-            <input type="checkbox" id="q4answer3">Indian<br>
-            <input type="checkbox" id="q4answer4">Japanese<br>
-            <input type="checkbox" id="q4answer5">French<br>
-            <input type="checkbox" id="q4answer6">Italian<br>
-            <input type="textbox" id="q4answer7">Other<br>
-          </form>
-        <h3>Do you plan on sleeping over at the Hackathon?</h3>
-          <select multiple>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
-        <h3>Please provide a link to any social media account you may have.</h3>
-        <input type="textbox" id="social">Social Media Link</input><br>
+          <div class = "form-group">
+            <label>What are you interested in doing at the Hackathon?</label>
+            <div class = "checkbox">
+              <input type="checkbox" id="q3answer1">VR(Virtual Reality)</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q3answer2" value = "">App Development</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q3answer3" value = "">IOS</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q3answer4" value = "">Game Development</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q3answer5" value = "">Music Development</label>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q3answer6" value = "">Android</label>
+            </div>
+            <p>Other</p>
+            <input type="text" id="q2answer7" class = "form-control">
+          </div>
+
+          <div class = "form-group">
+            <label for = "sel1">How many members do you prefer to be teamed up with?</label>
+              <select class = "form-control" id = "sel1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+          </div>
+
+          <div class ="form-group">
+            <label>What is your favorite type of food?</label>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer1">Chinese
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer2">American
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer3">Indian
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer4">Japanese
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer5">French
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer6">Italian
+            </div>
+              <label>Other</label>
+              <input type="text" class = "form-control" id="q4answer7">
+          </div>
+
+          <div class = "form-group"><!--problem-->
+            <label>Do you plan on sleeping over at the Hackathon?</label>
+            <div class="checkbox">
+              <input type="checkbox" value="">Yes
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="">No
+            </div>
+          </div>
+
+          <div class = "form-group">
+            <label>Please provide a link to any social media account you may have.</label>
+            <input type="text" id="social" class = "form-control">
+          </div>
+        </form>
+        <button type="button" class="btn btn-default">Submit</button>
       </div>
     </body>
   </html>
