@@ -114,19 +114,41 @@
                 <option value="4">4</option>
               </select>
           </div>
-          <h3>What is your favorite type of food?</h3>
-          <input type="checkbox" id="q4answer1">Chinese<br>
-          <input type="checkbox" id="q4answer2">American<br>
-          <input type="checkbox" id="q4answer3">Indian<br>
-          <input type="checkbox" id="q4answer4">Japanese<br>
-          <input type="checkbox" id="q4answer5">French<br>
-          <input type="checkbox" id="q4answer6">Italian<br>
-          <input type="textbox" id="q4answer7">Other<br>
-          <h3>Do you plan on sleeping over at the Hackathon?</h3>
-          <select multiple>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
+
+          <div class ="form-group"><!--problem-->
+            <label>What is your favorite type of food?</label>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer1">Chinese<br>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer2">American<br>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer3">Indian<br>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer4">Japanese<br>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer5">French<br>
+            </div>
+            <div class = "checkbox">
+              <input type="checkbox" id="q4answer6">Italian<br>
+            </div>
+              <label>Other</label>
+              <input type="text" class = "form-control" id="q4answer7">
+            </div>
+          </div>
+
+          <div class = "form-group">
+            <label>Do you plan on sleeping over at the Hackathon?</label>
+            <div class="checkbox">
+              <input type="checkbox" value="">Option 1
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="">Option 2
+            </div>
+          </div>
           <h3>Please provide a link to any social media account you may have.</h3>
           <input type="textbox" id="social">Social Media Link</input><br>
         </form>
