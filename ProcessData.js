@@ -14,6 +14,7 @@ class Person{
 function compareTo(a, b) {
   points = 0;
   if(!((a instanceof Person) || (b instanceof Person))){
+    console.error("Parameter not instance of person.");
     return -1;
   }
   for(x in a.numbOfHackathons){
@@ -58,21 +59,88 @@ function compareTo(a, b) {
       }
     }
   }
-
+  return points;
 
 }
 
 function getDataFromTypeForm(){
-   var returnvalue;
-   var question1 = [document.getElementById("q1answer1").value, document.getElementById("q1answer2").value, document.getElementById("q1answer3").value, document.getElementById("q1answer4").value, document.getElementById("q1answer5").value];
-   var question2 = [document.getElementById("q2answer1").value, document.getElementById("q2answer2").value, document.getElementById("q2answer3").value, document.getElementById("q2answer4").value, document.getElementById("q2answer5").value, document.getElementById("q2answer6").value, document.getElementById("q2answer7").value, document.getElementById("q2answer8").value];
-   var question3 = [document.getElementById("q3answer1").value, document.getElementById("q3answer2").value, document.getElementById("q3answer3").value, document.getElementById("q3answer4").value, document.getElementById("q3answer5").value];
-   var question4 = [document.getElementById("q4answer1").value, document.getElementById("q4answer2").value, document.getElementById("q4answer3").value, document.getElementById("q4answer4").value, document.getElementById("q4answer5").value];
-   var question5 = [document.getElementById("q5answer1").value, document.getElementById("q5answer2").value, document.getElementById("q5answer3").value, document.getElementById("q5answer4").value, document.getElementById("q5answer5").value];
-   var question6 = [document.getElementById("q6answer1").value, document.getElementById("q6answer2").value, document.getElementById("q6answer3").value, document.getElementById("q6answer4").value, document.getElementById("q6answer5").value];
+  var opts = [], opt;
+  sel = document.getElementById("q1");
+  var question1 = [sel.options.length];
+  for(i = 0; i<sel.options.length; i++){
+     sel = document.getElementById("q1");
+     opt = sel.options[i];
+     if(opt.selected){
+       opts.push(opt);
+     }
+   }
+   for(i = 0; i<opts.length; i++){
+     question1[i] = opts[i].value;
+   }
+   console.log(question1);
 
-});
+   var question2 = [];
+   var q2child = $("#q2").children();
+   $.each(q2child, function(index, value){
+     if(value.checked){
+       question2.push(value.value);
+     }
+   });
+   console.log(question2);
 
-  return returnvalue;
+   var question3 = [];
+   var q3child = $("#q3").children();
+   $.each(q3child, function(index, value){
+     if(value.checked){
+       question3.push(value.value);
+     }
+   });
+   console.log(question3);
+
+   var opts = [], opt;
+   sel = document.getElementById("q4");
+   var question4 = [sel.options.length];
+   for(i = 0; i<sel.options.length; i++){
+      sel = document.getElementById("q4");
+      opt = sel.options[i];
+      if(opt.selected){
+        opts.push(opt);
+      }
+    }
+    for(i = 0; i<opts.length; i++){
+      question4[i] = opts[i].value;
+    }
+   console.log(question4);
+   var question5 = [];
+   var q5child = $("#q5").children();
+   $.each(q5child, function(index, value){
+     if(value.checked){
+       question5.push(value.value);
+     }
+   });
+   console.log(question5);
+   var opts = [], opt;
+   sel = document.getElementById("q6");
+   var question6 = [sel.options.length];
+   for(i = 0; i<sel.options.length; i++){
+      sel = document.getElementById("q6");
+      opt = sel.options[i];
+      if(opt.selected){
+        opts.push(opt);
+      }
+    }
+    for(i = 0; i<opts.length; i++){
+      question6[i] = opts[i].value;
+    }
+   console.log(question6);
+   var returnvalue = [question1, question2, question3, question4, question5, question6];
+
+   return returnvalue;
+};
+
+function savePerson(a){
+  if(!(a instanceof Person)){
+    console.error("savePerson called, a is not a Person.");
+  }
+
 }
-getDataFromTypeForm();

@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="../ProcessData.js"></script>
       <title>Log In</title>
       <style>
         .container {
@@ -42,7 +43,7 @@
       </nav>
       <div class="chicken">
         <h3>How many Hackathons have you been to?</h3>
-          <select multiple>
+          <select multiple id = "q1">
             <option value="4+">4+</option>
             <option value="3">3</option>
             <option value="2">2</option>
@@ -51,52 +52,53 @@
           </select>
 
         <h3>What is your favorite programming language?</h3>
-          <form>
-            <input type="checkbox" id="q2answer1">Java<br>
-            <input type="checkbox" id="q2answer2">C++<br>
-            <input type="checkbox" id="q2answer3">Python<br>
-            <input type="checkbox" id="q2answer4">Objective C<br>
-            <input type="checkbox" id="q2answer5">JavaScript<br>
-            <input type="checkbox" id="q2answer6">Swift<br>
-            <input type="checkbox" id="q2answer7">HTML/CSS<br>
-            <input type="textbox" id="q2answer8">Other<br>
+          <form id="q2">
+            <input type="checkbox" value="Java">Java<br>
+            <input type="checkbox" value="C++">C++<br>
+            <input type="checkbox" value="Python">Python<br>
+            <input type="checkbox" value="Objective C">Objective C<br>
+            <input type="checkbox" value="JavaScript">JavaScript<br>
+            <input type="checkbox" value="Swift">Swift<br>
+            <input type="checkbox" value="HTML/CSS">HTML/CSS<br>
+            <input type="textbox">Other<br>
           </form>
 
         <h3> What are you interested in doing at the Hackathon?</h3>
-          <form>
-            <input type="checkbox" id="q3answer1">VR(Virtual Reality)<br>
-            <input type="checkbox" id="q3answer2">App Development<br>
-            <input type="checkbox" id="q3answer3">IOS<br>
-            <input type="checkbox" id="q3answer4">Game Development<br>
-            <input type="checkbox" id="q3answer5">Music Development<br>
-            <input type="checkbox" id="q3answer6">Android<br>
-            <input type="textbox" id="q2answer7">Other<br>
+          <form id="q3">
+            <input type="checkbox" value="VR(Virtual Reality)">VR(Virtual Reality)<br>
+            <input type="checkbox" value="App Development">App Development<br>
+            <input type="checkbox" value="IOS">IOS<br>
+            <input type="checkbox" value="Game Development">Game Development<br>
+            <input type="checkbox" value="Music Development">Music Development<br>
+            <input type="checkbox" value="Android">Android<br>
+            <input type="textbox">Other<br>
           </form>
 
         <h3>How many members do you prefer to be teamed up with?</h3>
-          <select multiple>
+          <select multiple id = "q4">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
         <h3>What is your favorite type of food?</h3>
-          <form>
-            <input type="checkbox" id="q4answer1">Chinese<br>
-            <input type="checkbox" id="q4answer2">American<br>
-            <input type="checkbox" id="q4answer3">Indian<br>
-            <input type="checkbox" id="q4answer4">Japanese<br>
-            <input type="checkbox" id="q4answer5">French<br>
-            <input type="checkbox" id="q4answer6">Italian<br>
-            <input type="textbox" id="q4answer7">Other<br>
+          <form id="q5">
+            <input type="checkbox" value="Chinese">Chinese<br>
+            <input type="checkbox" value="American">American<br>
+            <input type="checkbox" value="Indian">Indian<br>
+            <input type="checkbox" value="Japanese">Japanese<br>
+            <input type="checkbox" value="French">French<br>
+            <input type="checkbox" value="Italian">Italian<br>
+            <input type="textbox">Other<br>
           </form>
         <h3>Do you plan on sleeping over at the Hackathon?</h3>
-          <select multiple>
+          <select multiple id="q6">
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
         <h3>Please provide a link to any social media account you may have.</h3>
         <input type="textbox" id="social">Social Media Link</input><br>
+        <button onclick="getDataFromTypeForm()">Enter</buttton>
       </div>
     </body>
   </html>
