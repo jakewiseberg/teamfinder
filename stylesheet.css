@@ -1,0 +1,14 @@
+body {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+div.chicken{
+  position:relative;
+  left:5%;
+}
+
+table, th, td {
+  text-align: center;
+}

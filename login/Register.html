@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <!--char set -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--view settings optimized for mobile browsers-->
+      <link rel=icon href="../favicon.ico">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <title>Log In</title>
+      <style>
+        .container {
+          max-width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 1em;
+          text-align: center;
+        }
+      </style>
+      <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    </head>
+
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="../index.html"><img class="img-responsive" src="../images/mlh_logo.png" style="width: 80px; display: block; margin-top: auto; margin-bottom: auto; position: fixed; top: 1%; left: 1;"></a>
+            <!--trouble point-->
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://mlh.io/about">About MLH</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Log in</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="chicken">
+        <h3>How many Hackathons have you been to?</h3>
+          <select multiple>
+            <option value="4+">4+</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="0">0</option>
+          </select>
+
+        <h3>What is your favorite programming language?</h3>
+          <form>
+            <input type="checkbox" id="q2answer1">Java<br>
+            <input type="checkbox" id="q2answer2">C++<br>
+            <input type="checkbox" id="q2answer3">Python<br>
+            <input type="checkbox" id="q2answer4">Objective C<br>
+            <input type="checkbox" id="q2answer5">JavaScript<br>
+            <input type="checkbox" id="q2answer6">Swift<br>
+            <input type="checkbox" id="q2answer7">HTML/CSS<br>
+            <input type="textbox" id="q2answer8">Other<br>
+          </form>
+
+        <h3> What are you interested in doing at the Hackathon?</h3>
+          <form>
+            <input type="checkbox" id="q3answer1">VR(Virtual Reality)<br>
+            <input type="checkbox" id="q3answer2">App Development<br>
+            <input type="checkbox" id="q3answer3">IOS<br>
+            <input type="checkbox" id="q3answer4">Game Development<br>
+            <input type="checkbox" id="q3answer5">Music Development<br>
+            <input type="checkbox" id="q3answer6">Android<br>
+            <input type="textbox" id="q2answer7">Other<br>
+          </form>
+
+        <h3>How many members do you prefer to be teamed up with?</h3>
+          <select multiple>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        <h3>What is your favorite type of food?</h3>
+          <form>
+            <input type="checkbox" id="q4answer1">Chinese<br>
+            <input type="checkbox" id="q4answer2">American<br>
+            <input type="checkbox" id="q4answer3">Indian<br>
+            <input type="checkbox" id="q4answer4">Japanese<br>
+            <input type="checkbox" id="q4answer5">French<br>
+            <input type="checkbox" id="q4answer6">Italian<br>
+            <input type="textbox" id="q4answer7">Other<br>
+          </form>
+        <h3>Do you plan on sleeping over at the Hackathon?</h3>
+          <select multiple>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        <h3>Please provide a link to any social media account you may have.</h3>
+        <input type="textbox" id="social">Social Media Link</input><br>
+      </div>
+    </body>
+  </html>
