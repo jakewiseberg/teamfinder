@@ -1,3 +1,10 @@
+<!--to the backend developer,
+I've added IDs to the generic placeholders so that you can use document.GetElementById.innerHTML = () to easily replace it.
+Sanaan is working on a google forms format of the thing. best of luck, we're all behind you.
+best,
+brian
+-->
+
 <!DOCTYPE html>
   <html lang = "en">
     <head>
@@ -21,7 +28,7 @@
       <nav class = "navbar navbar-default">
         <div class = "container-fluid">
           <div class = "navbar-header">
-            <a class = "navbar-brand" href = "#"><img class = "img-responsive" src = "../images/mlh_logo.png" style = "width: 80px; display: block; margin-top: auto; margin-bottom: auto; position: fixed; top: 1%; left: 1;"></a>
+            <a class = "navbar-brand" href = "../index.html"><img class = "img-responsive" src = "../images/mlh_logo.png" style = "width: 80px; display: block; margin-top: auto; margin-bottom: auto; position: fixed; top: 1%; left: 1;"></a>
             <!--trouble point-->
           </div>
           <ul class = "nav navbar-nav navbar-right">
@@ -46,7 +53,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" id = "personA">
                 Person A</a>
               </h4>
             </div>
@@ -63,12 +70,13 @@
                       <th>Sleeping?</th>
                     </tr>
                     <tr>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
+                      <!--added ids for easier javscript handing if necessary.-->
+                      <td id = "hackathons">aaaaa</td>
+                      <td id = "languages">aaaaa</td>
+                      <td id = "interest">aaaaa</td>
+                      <td id = "members">aaaaa</td>
+                      <td id = "food">aaaaa</td>
+                      <td id = "sleeping">aaaaa</td>
                     </tr>
                   </table>
                 </div>
@@ -78,7 +86,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" id = "personA">
                 Person B</a>
               </h4>
             </div>
@@ -95,12 +103,13 @@
                       <th>Sleeping?</th>
                     </tr>
                     <tr>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
+                      <!--added ids for easier javscript handing if necessary.-->
+                      <td id = "hackathons2">aaaaa</td>
+                      <td id = "languages2">aaaaa</td>
+                      <td id = "interest2">aaaaa</td>
+                      <td id = "members2">aaaaa</td>
+                      <td id = "food2">aaaaa</td>
+                      <td id = "sleeping2">aaaaa</td>
                     </tr>
                   </table>
                 </div>
@@ -110,7 +119,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" id = "personA">
                 Person C</a>
               </h4>
             </div>
@@ -127,12 +136,12 @@
                       <th>Sleeping?</th>
                     </tr>
                     <tr>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
-                      <td>aaaaa</td>
+                      <td id = "hackathons3">aaaaa</td>
+                      <td id = "languages3">aaaaa</td>
+                      <td id = "interest3">aaaaa</td>
+                      <td id = "members3">aaaaa</td>
+                      <td id = "food3">aaaaa</td>
+                      <td id = "sleeping3">aaaaa</td>
                     </tr>
                   </table>
                 </div>
