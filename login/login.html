@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <html lang = "en">
+    <head>
+      <meta charset = "utf-8">
+      <!--char set -->
+      <meta name = "viewport" content = "width=device-width, initial-scale=1">
+      <!--view settings optimized for mobile browsers-->
+      <link rel=icon href="../favicon.ico">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <title>Log In</title>
+      <style>
+        .container {
+          max-width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 1em;
+          text-align: center;
+        }
+      </style>
+      <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    </head>
+
+    <body>
+      <nav class = "navbar navbar-default">
+        <div class = "container-fluid">
+          <div class = "navbar-header">
+            <a class = "navbar-brand" href = "../index.html"><img class = "img-responsive" src = "../images/mlh_logo.png" style = "width: 80px; display: block; margin-top: auto; margin-bottom: auto; position: fixed; top: 1%; left: 1;"></a>
+            <!--trouble point-->
+          </div>
+          <ul class = "nav navbar-nav navbar-right">
+            <li class = "dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+              <ul class = "dropdown-menu">
+                <li><a href = "https://mlh.io/about">About MLH</a></li>
+                <li><a href = "#">About Us</a></li>
+              </ul>
+            </li>
+            <li><a href = "#">Log in</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class = "container">
+        <div class = "jumbotron">
+          <h1>Login</h1>
+          <p>If this is your first time, simply enter any email/password-it will be as if you signed up for the first time.</p>
+          <form role="form">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">I am a returning hacker</label>
+            </div>
+            <!--make discinction between link to google form for first time ppl and to their own page-->
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </body>
+  </html>
