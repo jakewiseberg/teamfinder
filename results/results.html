@@ -1,0 +1,155 @@
+<!--to the backend developer,
+I've added IDs to the generic placeholders so that you can use document.GetElementById.innerHTML = () to easily replace it.
+Sanaan is working on a google forms format of the thing. best of luck, we're all behind you.
+best,
+brian
+
+google form link: https://docs.google.com/forms/d/1hlmm6JDV0sUT6rAYNZlJU-ahk5V58ZyYgnK5y1qm-2I/viewform-->
+
+<!DOCTYPE html>
+  <html lang = "en">
+    <head>
+      <meta charset = "utf-8">
+      <!--char set -->
+      <meta name = "viewport" content = "width=device-width, initial-scale=1">
+      <!--view settings optimized for mobile browsers-->
+      <link rel=icon href="../favicon.ico">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <title>Results</title>
+      <style>
+        
+      </style>
+      <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    </head>
+    <body>
+
+      <nav class = "navbar navbar-default">
+        <div class = "container-fluid">
+          <div class = "navbar-header">
+            <a class = "navbar-brand" href = "../index.html"><img class = "img-responsive" src = "../images/mlh_logo.png" style = "width: 80px; display: block; margin-top: auto; margin-bottom: auto; position: fixed; top: 1%; left: 1;"></a>
+            <!--trouble point-->
+          </div>
+          <ul class = "nav navbar-nav navbar-right">
+            <li class = "dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+              <ul class = "dropdown-menu">
+                <li><a href = "https://mlh.io/about">About MLH</a></li>
+                <li><a href = "#">About Us</a></li>
+              </ul>
+            </li>
+            <li><a href = "#">Log in</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class = "container">
+        <div class = "jumbotron">
+          <h1>Results</h1>
+          <p>Based on the answers you inputed into our Typeform, we came up with a list of other people with similar interests that we think would make good teammates for your next hackathon. Thank you for hacking with MHL, and good luck on your next hackathon!</p>
+        </div>
+
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" id = "personA">
+                Person A</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class = "table-responsive">
+                  <table class = "table table-hover">
+                    <tr>
+                      <th>Hackathons</th>
+                      <th>Languages</th>
+                      <th>Interest</th>
+                      <th>Members</th>
+                      <th>Food</th>
+                      <th>Sleeping?</th>
+                    </tr>
+                    <tr>
+                      <!--added ids for easier javscript handing if necessary.-->
+                      <td id = "hackathons">aaaaa</td>
+                      <td id = "languages">aaaaa</td>
+                      <td id = "interest">aaaaa</td>
+                      <td id = "members">aaaaa</td>
+                      <td id = "food">aaaaa</td>
+                      <td id = "sleeping">aaaaa</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" id = "personA">
+                Person B</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class = "table-responsive">
+                  <table class = "table table-hover">
+                    <tr>
+                      <th>Hackathons</th>
+                      <th>Languages</th>
+                      <th>Interest</th>
+                      <th>Members</th>
+                      <th>Food</th>
+                      <th>Sleeping?</th>
+                    </tr>
+                    <tr>
+                      <!--added ids for easier javscript handing if necessary.-->
+                      <td id = "hackathons2">aaaaa</td>
+                      <td id = "languages2">aaaaa</td>
+                      <td id = "interest2">aaaaa</td>
+                      <td id = "members2">aaaaa</td>
+                      <td id = "food2">aaaaa</td>
+                      <td id = "sleeping2">aaaaa</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" id = "personA">
+                Person C</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class = "table-responsive">
+                  <table class = "table table-hover">
+                    <tr>
+                      <th>Hackathons</th>
+                      <th>Languages</th>
+                      <th>Interest</th>
+                      <th>Members</th>
+                      <th>Food</th>
+                      <th>Sleeping?</th>
+                    </tr>
+                    <tr>
+                      <td id = "hackathons3">aaaaa</td>
+                      <td id = "languages3">aaaaa</td>
+                      <td id = "interest3">aaaaa</td>
+                      <td id = "members3">aaaaa</td>
+                      <td id = "food3">aaaaa</td>
+                      <td id = "sleeping3">aaaaa</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </body>
+  </html>
