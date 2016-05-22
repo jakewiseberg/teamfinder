@@ -5,7 +5,7 @@
       <!--char set -->
       <meta name = "viewport" content = "width=device-width, initial-scale=1">
       <!--view settings optimized for mobile browsers-->
-      <title>Hackathon team Generator</title>
+      <title>hackerspace</title>
       <link rel=icon href="favicon.ico">
       <style>
         .container {
@@ -35,8 +35,8 @@
       </nav>
       <div class = "container">
         <img class = "img-responsive" src = "images/mlh_logo.png" style = "margin-top: 3em;">
-        <h1>Hackathon Team Generator</h1>
-        <p>The <b>MLH Hackathon Team Generator</b> seeks to facilitate team-making for those who can't make a team before the hackathon starts. While most hackathons have a session dedicated to creating new teams, this takes much time away from going to workshops and hacking. This is a problem our team members ran into that many other hackers here have run into. So, we introduce to you this unique tool to allow you to find new members!</p>
+        <h1>hackerspace</h1>
+        <p>The <b>MLH hackerspace</b> seeks to facilitate team-making for those who can't make a team before the hackathon starts. While most hackathons have a session dedicated to creating new teams, this takes much time away from going to workshops and hacking. This is a problem our team members ran into that many other hackers here have run into. So, we introduce to you this unique tool to allow you to find new members!</p>
         <a href="register.php" class="btn btn-info" role="button">Sign Up</a>
       </div>
     </body>
