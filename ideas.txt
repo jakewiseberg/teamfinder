@@ -1,7 +1,11 @@
-use typeform to create actual question form
+
 then create program that automatically uses question forms to match ppl with other ppl with correct choices.
 link FB options too so that ppl can talk to each other :)
 
 To-Do List
 talk to teammates about backend and front end work
-manage bootstrap and stuff
+manage bootstrap and stuff (done)
+
+sign up page
+link index page to sign up page, then link sign up page to form
+find way to link form back to results page, but that also means we need to enter some results first.
