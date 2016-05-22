@@ -26,14 +26,14 @@ function compareTo(a, b) {
   for(x in a.favLanguage){
     for(y in b.favLanguage){
       if(x == y){
-        points+=2;
+        points+=4;
       }
     }
   }
   for(x in a.interests){
     for(y in b.interests){
       if(x == y){
-        points+=2;
+        points+=5;
       }
     }
   }
@@ -47,14 +47,14 @@ function compareTo(a, b) {
   for(x in a.favFood){
     for(y in b.favFood){
       if(x == y){
-        points+=2;
+        points+=3;
       }
     }
   }
   for(x in a.sleep){
     for(y in b.sleep){
       if(x == y){
-        points+=2;
+        points+=1;
       }
     }
   }
